@@ -18,6 +18,10 @@ body {
     color: #fff;
     font-family: 'Rubik', sans-serif;
 }
+ul {
+    list-style: none;
+    display: flex;
+}
 button {
     font-weight:bold;
     font-family: 'Rubik', sans-serif;
@@ -34,6 +38,9 @@ button {
         color: #1b1b1b;
     }
 }
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+}
 h2 {
     font-weight: lighter;
     font-size: 4rem;
@@ -47,6 +54,7 @@ h4 {
 }
 a{
     font-family: 'Rubik', sans-serif;
+    text-decoration: none;
 }
 span {
     font-weight: 500;
