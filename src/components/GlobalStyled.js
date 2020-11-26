@@ -16,9 +16,11 @@ const GlobalStyle = createGlobalStyle`
 body {
     background: #1b1b1b;
     color: #fff;
+    font-family: 'Rubik', sans-serif;
 }
 button {
     font-weight:bold;
+    font-family: 'Rubik', sans-serif;
     font-size: 1.1rem;
     cursor: pointer;
     padding: 1rem 2rem;
@@ -36,14 +38,17 @@ h2 {
     font-weight: lighter;
     font-size: 4rem;
 }
+h3 {
+    font-weight: 500;
+}
 h4 {
-    font-weight: bold;
+    font-weight: 500;
 }
 a{
-    font-size: 1.1.rem;
+    font-family: 'Rubik', sans-serif;
 }
 span {
-    font-weight: bold;
+    font-weight: 500;
     color: #23d997;
 }
 p {
