@@ -42,6 +42,7 @@ h3 {
     font-weight: 500;
 }
 h4 {
+    font-size: 2rem;
     font-weight: 500;
 }
 a{
@@ -54,8 +55,9 @@ span {
 p {
     padding: 3rem 0rem;
     color: #ccc;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 150%;
+    font-weight: lighter;
 }
 
 `;
