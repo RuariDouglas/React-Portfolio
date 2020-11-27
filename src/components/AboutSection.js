@@ -8,24 +8,24 @@ import {
   StyledImageContainer,
   Hide,
 } from "../styles";
+//FRAMER MOTION
+import { motion } from "framer-motion";
+
 const AboutSection = () => {
   return (
     <StyledSection>
       {/* DESCRIPTION SECTION */}
       <StyledDescription>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>I'm a Front-End Developer</h2>
+            <motion.h2>
+              I'm a <span>Front-End Developer</span>
+            </motion.h2>
           </Hide>
-          <Hide>
-            <h2>
-              loooking <span>for</span>
-            </h2>
-          </Hide>
-          <Hide>
-            <h2>a job.</h2>
-          </Hide>
-        </div>
+          <motion.h2>
+            <h2>loooking for a job.</h2>
+          </motion.h2>
+        </motion.div>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text

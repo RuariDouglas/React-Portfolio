@@ -7,14 +7,18 @@ import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 
+// ANIMATIONS
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 const OurWork = () => {
   return (
-    <Work>
+    <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       {/* Movie */}
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/the-athlete">
           <img src={athlete} alt="athlete" />
         </Link>
       </Movie>
@@ -22,7 +26,7 @@ const OurWork = () => {
       <Movie>
         <h2>The Racer</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/the-racer">
           <img src={theracer} alt="racer" />
         </Link>
       </Movie>
@@ -30,7 +34,7 @@ const OurWork = () => {
       <Movie>
         <h2>Good Times</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/good-times">
           <img src={goodtimes} alt="good times" />
         </Link>
       </Movie>
@@ -38,7 +42,7 @@ const OurWork = () => {
   );
 };
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
