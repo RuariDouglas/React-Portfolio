@@ -9,7 +9,7 @@ export const pageAnimation = {
     rotation: 0.06,
     y: 0,
     transition: {
-      duration: 1,
+      duration: 0.75,
       when: "beforeChildren",
       staggerChildren: 0.15,
     },
@@ -19,7 +19,7 @@ export const pageAnimation = {
     rotation: 0.06,
     y: 300,
     transition: {
-      duration: 0.5,
+      duration: 0.2,
     },
   },
 };

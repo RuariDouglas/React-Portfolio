@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { titleAnim } from "../animation";
 import { fade } from "../animation";
 import { photoAnim } from "../animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -40,6 +41,7 @@ const AboutSection = () => {
       <StyledImageContainer>
         <motion.img variants={photoAnim} src={home1} alt="Home" />
       </StyledImageContainer>
+      <Wave />
     </StyledSection>
   );
 };
