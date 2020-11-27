@@ -10,6 +10,9 @@ import {
 } from "../styles";
 //FRAMER MOTION
 import { motion } from "framer-motion";
+import { titleAnim } from "../animation";
+import { fade } from "../animation";
+import { photoAnim } from "../animation";
 
 const AboutSection = () => {
   return (
@@ -18,24 +21,24 @@ const AboutSection = () => {
       <StyledDescription>
         <motion.div>
           <Hide>
-            <motion.h2>
+            <motion.h2 variants={titleAnim}>
               I'm a <span>Front-End Developer</span>
             </motion.h2>
           </Hide>
-          <motion.h2>
-            <h2>loooking for a job.</h2>
-          </motion.h2>
+          <Hide>
+            <motion.h2 variants={titleAnim}>loooking for a job.</motion.h2>
+          </Hide>
         </motion.div>
-        <p>
+        <motion.p variants={fade}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
-        </p>
-        <button>Contact Me</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Me</motion.button>
       </StyledDescription>
 
       {/* IMAGE ON RIGHT */}
       <StyledImageContainer>
-        <img src={home1} alt="Home" />
+        <motion.img variants={photoAnim} src={home1} alt="Home" />
       </StyledImageContainer>
     </StyledSection>
   );

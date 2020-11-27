@@ -60,9 +60,7 @@ const MovieDetail = () => {
   );
 };
 
-const Details = styled(motion.div)`
-  background-color: green;
-`;
+const Details = styled(motion.div)``;
 
 const HeadLine = styled.div`
   min-height: 90vh;
