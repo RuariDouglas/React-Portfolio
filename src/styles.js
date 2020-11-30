@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 /* When creating styled components, there will be times where you need to reuse elements.
 In styles.js we can create components and export them to use throughout our app.
@@ -7,7 +8,7 @@ Note how we export every style variable
 */
 
 // STYLED COMPONENTS
-export const StyledSection = styled.div`
+export const StyledSection = styled(motion.div)`
   min-height: 100vh;
   display: flex;
   align-items: center;

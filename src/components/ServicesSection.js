@@ -15,9 +15,19 @@ import {
   StyledImageContainer,
 } from "../styles";
 
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
+
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Services>
+    // To start animation, we must make sure ref, initial, animate properties are both input
+    <Services
+      ref={element}
+      initial="hidden"
+      animate={controls}
+      variants={scrollReveal}
+    >
       <StyledDescription>
         <h2>
           High <span>quality</span> code
