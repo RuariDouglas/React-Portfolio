@@ -39,7 +39,14 @@ const AboutSection = () => {
 
       {/* IMAGE ON RIGHT */}
       <StyledImageContainer>
-        <motion.img variants={photoAnim} src={home1} alt="Home" />
+        {/* Passing in "Initial and show" as well as variants removes the stagger of the elements */}
+        <motion.img
+          variants={photoAnim}
+          initial="hidden"
+          animate="show"
+          src={home1}
+          alt="Home"
+        />
       </StyledImageContainer>
       <Wave />
     </StyledSection>
