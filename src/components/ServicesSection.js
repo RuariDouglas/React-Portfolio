@@ -40,7 +40,7 @@ const ServicesSection = () => {
               <img src={clock} alt="Clock" />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem Ipsum blah blah</p>
+            <p>Lorem Ipsum </p>
           </Card>
 
           {/* CARD */}
@@ -49,7 +49,7 @@ const ServicesSection = () => {
               <img src={diaphragm} alt="Diaphragm" />
               <h3>Diaphragm</h3>
             </div>
-            <p>Lorem Ipsum blah blah</p>
+            <p>Lorem Ipsum </p>
           </Card>
 
           {/* CARD */}
@@ -58,7 +58,7 @@ const ServicesSection = () => {
               <img src={money} alt="Money" />
               <h3>Money</h3>
             </div>
-            <p>Lorem Ipsum blah blah</p>
+            <p>Lorem Ipsum </p>
           </Card>
 
           {/* CARD */}
@@ -67,7 +67,7 @@ const ServicesSection = () => {
               <img src={teamwork} alt="Teamwork" />
               <h3>Teamwork</h3>
             </div>
-            <p>Lorem Ipsum blah blah</p>
+            <p>Lorem Ipsum </p>
           </Card>
         </Cards>
       </StyledDescription>

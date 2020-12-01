@@ -18,7 +18,6 @@ const MovieDetail = () => {
 
   // USEEFFECT
   /* As soon as the component mounts. When we click on a movie, it's to load that movies specific information. So the useEffect is going to run as soon as the component mounts. */
-
   useEffect(() => {
     //1. Here we find out which movie we are on, we compare the the captured url against the array of movies and filter a match
     //2. Then we update our state.
