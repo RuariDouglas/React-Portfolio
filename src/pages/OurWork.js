@@ -77,6 +77,9 @@ const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
   h2 {
     padding: 1rem 0;
   }
@@ -107,16 +110,16 @@ const Frame1 = styled(motion.div)`
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: blue;
+  background-color: #189769;
   z-index: 2;
 `;
 
 const Frame2 = styled(Frame1)`
-  background: red;
+  background-color: #4de2ac;
 `;
 
 const Frame3 = styled(Frame1)`
-  background: purple;
+  background-color: #1cad78;
 `;
 
 export default OurWork;

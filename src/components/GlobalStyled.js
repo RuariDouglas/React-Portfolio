@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
 // Step 3.
 :root {
     font-size: 100%;
+    @media (max-width: 1500px){
+        font-size: 80%;
+    }
 }
 * {
     margin: 0;
@@ -19,6 +22,7 @@ body {
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
 }
+
 ul {
     list-style: none;
     display: flex;
@@ -28,7 +32,7 @@ button {
     font-family: 'Rubik', sans-serif;
     font-size: 1.1rem;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1rem 5rem;
     border: 3px solid #23d997;
     background: transparent;
     outline:none;

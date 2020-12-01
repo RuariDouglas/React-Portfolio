@@ -13,7 +13,7 @@ export const useScroll = () => {
   - "Element" relates to the element where the trigger begins. We set this on the
   - "View" returns the result of wither it's in view or not, it will return a boolean value.
   - "threshold" determines the delay on the effect, think of it as 'offset' */
-  const [element, view] = useInView({ threshold: 0.3 });
+  const [element, view] = useInView({ threshold: 0.2 });
   if (view) {
     controls.start("show");
   } else {

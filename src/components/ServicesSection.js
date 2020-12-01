@@ -92,10 +92,19 @@ const Services = styled(StyledSection)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    text-align: center;
+    justify-content: center;
+  }
 `;
 
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 17rem;
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .icon {
     display: flex;
     align-items: center;

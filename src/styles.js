@@ -15,12 +15,23 @@ export const StyledSection = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: #fff;
+  @media (max-width: 1300px) {
+    display: block;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
 `;
 
 export const StyledDescription = styled.div`
   flex: 1;
   padding-right: 5rem;
   font-weight: lighter;
+  @media (max-width: 1300px) {
+    padding: 0;
+    button {
+      margin: 0 0 5rem 0;
+    }
+  }
 `;
 
 export const StyledImageContainer = styled.div`
