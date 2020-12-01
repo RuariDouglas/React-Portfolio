@@ -17,6 +17,7 @@ body {
     background: #1b1b1b;
     color: #fff;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 ul {
     list-style: none;

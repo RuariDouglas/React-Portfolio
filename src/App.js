@@ -12,6 +12,7 @@ import Nav from "../src/components/Nav";
 import { Switch, Route, useLocation } from "react-router-dom";
 // ANIMATION
 import { AnimatePresence } from "framer-motion";
+import ScrollTop from "./components/scrollTop";
 
 function App() {
   const location = useLocation();
